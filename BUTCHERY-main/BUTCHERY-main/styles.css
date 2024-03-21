@@ -1,0 +1,749 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+
+}
+
+
+.header{
+  width: 100%;
+  height: 100px;
+  background-color: 023246;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 9%;
+ 
+}
+.logo{
+  display: flex;
+}
+.logo img{
+  width: 100px;
+  height: 90px;
+}
+
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+} 
+.btn{
+  display: none;
+}
+li a{
+  padding: 0 25px;
+  text-transform: capitalize;
+  color: black ;
+  position: relative;
+  transition: .3s ease; 
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: capitalize;
+  
+}
+li{
+  position: relative;
+}
+
+li a:hover,
+.active{
+  color: #6D9773;
+  
+}
+
+li a.active::after,
+li a:hover::after{
+  content: " ";
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  bottom:  -4px;
+  background-color: #0c3b2e;
+  left: 26px;
+}
+
+.right{
+  
+  justify-content:center;
+  align-items: center;
+
+}
+
+.right .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.right .icon i:nth-child(2){
+  border: 1px solid black;
+  padding: 7px 8px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.right .icon i:nth-child(1){
+  font-size: 20px;
+}
+
+.right .icon i:nth-child(3){
+  font-size: 25px
+}
+
+
+
+
+
+.butchery 
+{
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+.butchery img 
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.butchery-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.badge{
+  color: #f3f7f3;
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+ font-size: 24px;
+}
+
+.meat_container{
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+
+.meat_container h1{
+  font-size: 35px;
+  text-transform: uppercase;
+  padding: 30px;
+  text-align: center;
+}
+
+
+.meat_container .meat_cards{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.meat-item {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 320px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.meat_image{
+  width: 50%;
+}
+.meat-item .text{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 30px;
+}
+
+.meat-item .text h2{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.meat-item .text p{
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: justify;
+}
+
+.meat-item .text .price{
+  padding-top: 7px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 900;
+  font-style: italic;
+
+}
+
+.meat-item .text .btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 10px;
+}
+
+.meat-item .text .btn button{
+  font-size: 15px;
+  padding: 10px 30px;
+  text-transform: capitalize;
+}
+.meat-item img {
+  width: 100%;
+  height: 100%;
+}
+.meat-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 1rem;
+  margin: 0;
+}
+
+
+#order-online{
+  width: 100%;
+  height: 40vh;
+  padding: 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #04AA6D;
+}
+
+#order-online .order_heading{
+  text-align: center;
+  width: 50%;
+}
+
+#order-online .order_heading h2{
+  font-size: 28px;
+}
+#order-online .order_heading h2 span{
+  color: red;
+  font-size: 32px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+#order-online .order_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 15px;
+  gap: 20px;
+}
+
+#order-online .order_text .order_btn{
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+}
+
+#order-online .order_text .order_btn a{
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+#about{
+  padding: 50px;
+}
+
+#about h2{
+  font-size: 30px;
+  text-transform: capitalize;
+  padding: 20px;
+  text-align: center;
+
+}
+#about p{
+  padding: 2px 50px;
+  text-align: justify;
+}
+
+.meat-info h2 
+{
+  margin-top: 0;
+}
+.button 
+{
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.button 
+{
+  transition: background-color 0.3s ease;
+}
+.button:hover 
+{
+  background-color: #444;
+}
+#register 
+{
+  background-color: hsl(340, 10%, 94%);
+  padding: 4rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 2rem auto;
+  max-width: 500px;
+}
+#register h2 
+{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#register label 
+{
+  display: block;
+  margin-bottom: 0.5rem;
+}
+#register input[type="text"], #register input[type="email"],#register input[type="password"] 
+{
+  width: 100%;
+  padding: 0.5rem;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+#register button[type="submit"] 
+{
+  background-color: #f3f7f3;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#register button[type="submit"]:hover 
+{
+  background-color: #3e8e41;
+}
+#login 
+{
+  background-color: hsl(0, 15%, 92%);
+  padding: 4rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 2rem auto;
+  max-width: 500px;
+}
+
+#login h2 x
+{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#login label 
+{
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#login input[type="email"], #login input[type="password"] 
+{
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+#login button[type="submit"] 
+{
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="submit"] 
+{
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #4CAF50;
+  color: hsl(197, 87%, 49%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover 
+{
+  background-color: #45a049;
+}
+input[type="submit"]:enabled 
+{
+  background-color: green;
+  cursor: not-allowed;
+}
+form 
+{
+  font-family: Arial, sans-serif;
+  width: 300px;
+  margin: 0 auto;
+  background-color: hsl(0, 15%, 92%);
+  padding: 4rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 2rem auto;
+  max-width: 500px;
+}
+label 
+{
+  display: block;
+  margin-top: 20px;
+}
+input, select 
+{
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+input[type="submit"] 
+{
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 20px;
+}
+input[type="Login"] 
+{
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Style the form element with a border around it */
+
+.newsletter{
+  width: 100%;
+  padding: 40px;
+}
+.form_cont{
+  box-shadow:  0 4px 8px 0 #00000033, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Add some padding and a grey background color to containers */
+.container_heading {
+  text-align: center;
+  padding: 20px;
+}
+
+
+.cont_news{
+  width: 100%;
+  display: flex;
+  padding: 10px;
+}
+
+.container_text{
+  width: 50%;
+  padding: 20px;
+}
+
+.cont_news .container_text h2{
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.cont_news .container_text p{
+  text-align: justify;
+  padding-top: 20px;
+  font-weight: lighter;
+}
+
+.container h2{
+  text-align: center;
+  font-weight: 400;
+  font-size: 35px;
+  text-transform: capitalize;
+  color: #6D9773;   
+}
+
+.container p{
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.container_input{
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Style the input elements and the submit button */
+input[type="text"],
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type="checkbox"] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+
+
+
+
+
+ /* Footer styles */
+ .footer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Column styles */
+.column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* Payment methods icons */
+
+
+.payment-icons img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+
+
+
+@media (max-width:799px) {
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding: 100px 0;
+    right: -300px;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    z-index: 1;
+    background-color: #efff;
+    box-shadow:  0 4px 8px 0 #00000033, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: .2s ease;
+  }
+  .nav.active {
+    right: 0px;
+  }
+
+  nav ul {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+nav ul li{
+  margin-bottom: 20px;
+}
+
+
+nav .close_icon{
+  position: absolute;
+  top:10px;
+  left:20px;
+}
+
+nav .close_icon i{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.h1, h1 {
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: 900;
+}
+
+.button {
+  transition: background-color 0.3s ease;
+  background-color: #04AA6D;
+  color: #efff;
+  padding: 10px 30px;
+  text-transform: capitalize;
+  font-size: 17px;
+  box-shadow:  0 4px 8px 0 #00000033, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:hover{
+  background-color: #05d186;
+  color: #efff;
+  font-weight: 400;
+}
+  
+.meat_container {
+  padding: 30px;
+}
+
+.meat-item {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.meat-item .text h2 {
+  padding: 5px;
+}
+
+.meat-item .text .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 5px;
+}
+
+.meat-item .text .btn button {
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.meat-item .text .btn button:first-child{
+  transition: background-color 0.3s ease;
+  background-color: #04AA6D;
+  color: #efff;
+}
+
+.meat-item .text .btn button:first-child:hover{
+  background-color: #05d186;
+  color: #efff;
+  font-weight: 400;
+}
+
+.meat-item .text .btn button:last-child:hover{
+
+  background-color: #e5e5e5;
+
+
+}
+
+
+#order-online {
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+#order-online .order_heading {
+  text-align: center;
+  width: 30%;
+}
+
+#order-online .order_text {
+  width: 70%;
+  padding: 0px;
+  gap: 5px;
+}
+#order-online .order_text  p {
+  margin-bottom: 0;
+}
+
+#order-online .order_text .order_btn {
+  padding: 10px 20px;
+  background-color: #efff;
+  transition: background-color 0.3s ease;
+}
+
+#order-online .order_text .order_btn:hover{
+  background-color: rgb(223, 223, 223);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+#order-online .order_text .order_btn a {
+  color: black;
+  font-weight: 300;
+}
+
+
+#about {
+  padding: 40px 10px; 
+}
+
+#about p {
+  padding: 2px 20px;
+  text-align: justify;
+}
+
+.newsletter {
+  width: 100%;
+  padding: 20px;
+  
+}
+
+.footer {
+  background-color: #6D9773;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+}

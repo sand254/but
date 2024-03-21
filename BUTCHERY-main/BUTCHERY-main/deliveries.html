@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <legend>
+    <form action="delivery.php" method="post">
+        <p>DELIVERY OPTION INFO: </p>
+        <label for="address">Address:</label><br>
+        <select name="address" id="address">
+        <option value="NAIROBI">NAIROBI</option>
+        <option value="KIAMBU">KIAMBU</option>
+        <option value="MOMBASA">MOMBASA</option>
+        <option value="NAKURU">NAKURU</option> 
+        <option value="NYERI">NYERI</option>
+        <option value="MURANGA">MURANGA</option>
+        </select><br>
+        <label for="appartment">Appartment:</label><br>
+        <input type="text" id="appartment" name="appartment" required><br>
+
+        <label for="hnumber">House Number:</label><br>
+        <input type="text" id="hnumber" name="hnumber" required><br>
+
+        <label for="name">Full_Name</label><br>
+        <input type="text" name="name" id="name"  required><br>
+
+       
+        <label for="date">Delivery date:</label><br>
+        <input type="date" id="dat" name="dat" min="2024-02-27" required><br>
+
+        
+        <input type="checkbox" name="terms" id="terms">
+        <label for="terms">Agree the terms and conditions</label><br>
+
+        <button type="submit">REQUEST DELIVERY</button>
+        
+    </form>
+</legend>
+</body>
+</html>
